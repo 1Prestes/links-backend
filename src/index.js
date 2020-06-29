@@ -1,4 +1,5 @@
 const express = require('express');
+const db = require('./models');
 
 const authController = require('./constrollers/auth');
 
@@ -10,6 +11,8 @@ app.get('/', (req, res) => {
 
 app.use('/auth', authController);
 
-app.listen(3001, () => {
-    console.log('SERVER RUNNING!');
+db.sequelize.sync().then(() => {
+    app.listen(3001, () => {
+        console.log('SERVER RUNNING!');
+    });
 });
