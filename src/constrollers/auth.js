@@ -9,15 +9,16 @@ router.get('/sign-in', (req, res) => {
 });
 
 router.get('/sign-up', async (req, res) => {
+    const { email, password } = req.body;
+    const account = await Account.findOne({ where: { email } });
 
-    const email = 'dbz@gmail.com';
-    const password = '123456';
+    if (account) {
+        return res.jsonBadRequest(null, "Account already exists!");
+    }
 
     const hash = bcrypt.hashSync(password, 10);
-
-    const result = await Account.create({ email, password: hash });
-    // console.log(hash);
-    return res.json({ User: result });
+    const newAccount = await Account.create({ email, password: hash });
+    return res.jsonOK(newAccount);
 });
 
 module.exports = router;
