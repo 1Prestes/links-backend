@@ -3,14 +3,21 @@
 
 
 ### Create a Account
-GET {{baseUrl}}/auth/sign-up
+POST {{baseUrl}}/auth/sign-up
 Content-Type: {{contentType}}
 
 {
-    "email": "dbz4@gmail.com",
+    "email": "dbz7@gmail.com",
     "password": "123456",
     "password_confirmation": "123456"
 }
-### aaa
-GET {{baseUrl}}/auth/sign-in
 
+
+### Sign in
+POST {{baseUrl}}/auth/sign-in
+Content-Type: {{contentType}}
+
+{
+    "email": "dbz7@gmail.com",
+    "password": "123456"
+}

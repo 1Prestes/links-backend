@@ -1,4 +1,11 @@
 {
+    "account.signin.password.string.empty": "Senha é obrigatorio.",
+    "account.signin.email.string.empty": "Email é obrigatorio.",
+    "account.signin.email.string.email": "Email não válido.",
+    "account.signin.password.string.pattern.base": "Senha deve conter entre 6 e 32 caracteres.",
+    "account.signin.invalid": "Credenciais inválidas.",
+    "account.signin.success": "login efetuado com sucesso.",
+
     "account.signup.password_confirmation.any.required": "Confirmação de senha é obrigatorio.",
     "account.signup.password.string.empty": "Senha é obrigatorio.",
     "account.signup.email.string.empty": "Email é obrigatorio.",
@@ -7,6 +14,7 @@
     "account.signup.password_confirmation.any.only": "Senhas não coincidem.",
     "account.signup.email_exists": "Email já cadastrado",
     "account.signup.success": "Cadastrado efetuado com sucesso.",
+
     "resonse.json_ok": "Requisição efetuada com sucesso.",
     "resonse.json_bad_request": "Requisição invalida.",
     "response.json_unauthorized": "Não autorizado.",
