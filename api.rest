@@ -12,7 +12,6 @@ Content-Type: {{contentType}}
     "password_confirmation": "123456"
 }
 
-
 ### Sign in
 POST {{baseUrl}}/auth/sign-in
 Content-Type: {{contentType}}
@@ -21,3 +20,37 @@ Content-Type: {{contentType}}
     "email": "dbz7@gmail.com",
     "password": "123456"
 }
+
+
+### List Links
+GET {{baseUrl}}/link
+Content-Type: {{contentType}}
+
+### Create Link
+POST {{baseUrl}}/link
+Content-Type: {{contentType}}
+
+{
+        "label": "Facebook",
+        "url": "https://facebook.com",
+        "isSocial": false
+}
+
+### Get a link by Id
+GET {{baseUrl}}/link/1
+Content-Type: {{contentType}}
+
+### Edit Link
+PUT {{baseUrl}}/link/1
+Content-Type: {{contentType}}
+
+{
+    "label": "Melhor motor de busca",
+    "url": "https://facebook.com",
+    "isSocial": true
+}
+
+### Delete a link
+
+DELETE {{baseUrl}}/link/3
+Content-Type: {{contentType}}
