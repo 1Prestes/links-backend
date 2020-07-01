@@ -2,12 +2,15 @@
 @contentType = application/json
 
 
-
 ### Create a Account
 GET {{baseUrl}}/auth/sign-up
 Content-Type: {{contentType}}
 
 {
-    "email": "dbz@gmail.com",
-    "password": "123456"
+    "email": "dbz4@gmail.com",
+    "password": "123456",
+    "password_confirmation": "123456"
 }
+### aaa
+GET {{baseUrl}}/auth/sign-in
+

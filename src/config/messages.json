@@ -1,0 +1,16 @@
+{
+    "account.signup.password_confirmation.any.required": "Confirmação de senha é obrigatorio.",
+    "account.signup.password.string.empty": "Senha é obrigatorio.",
+    "account.signup.email.string.empty": "Email é obrigatorio.",
+    "account.signup.email.string.email": "Email não válido.",
+    "account.signup.password.string.pattern.base": "Senha deve conter entre 3 e 32 caracteres.",
+    "account.signup.password_confirmation.any.only": "Senhas não coincidem.",
+    "account.signup.email_exists": "Email já cadastrado",
+    "account.signup.success": "Cadastrado efetuado com sucesso.",
+    "resonse.json_ok": "Requisição efetuada com sucesso.",
+    "resonse.json_bad_request": "Requisição invalida.",
+    "response.json_unauthorized": "Não autorizado.",
+    "response.json_not_found": "Não encontrado.",
+    "response.json_server_error": "Erro no servidor."
+
+}
