@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 const tokenPrivateKey = process.env.JWT_TOKEN_PRIVATE_KEY;
 const refreshTokenPrivateKey = process.env.JWT_REFRESH_TOKEN_PRIVATE_KEY;
-const options = { expiresIn: '30 minutes' }
+const options = { expiresIn: '50 minutes' }
 const refreshOptions = { expiresIn: '1 days' }
 
 const generatJwt = (payload) => {
@@ -12,7 +12,7 @@ const generatJwt = (payload) => {
 }
 
 const generatRefreshJwt = (payload) => {
-    return jwt.sign(payload, refreshTokenPrivateKey, options)
+    return jwt.sign(payload, refreshTokenPrivateKey, refreshOptions)
 }
 
 const verifyJwt = (token) => {

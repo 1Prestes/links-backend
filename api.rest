@@ -1,7 +1,7 @@
 @baseUrl = http://localhost:3001
 @contentType = application/json
 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImlhdCI6MTU5MzcwMTMzMCwiZXhwIjoxNTkzNzAzMTMwfQ.GbAVCQIHES0xiWxZy0L6i0daJNcl9bkBWbUeZIFlPO0
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTkzNzA5MTg4LCJleHAiOjE1OTM3MTIxODh9.BEFtmN9kWMW1Z-a2tACW3LCY0YQIJV1mOaI_apGbSpM
 
 ### Create a Account
 POST {{baseUrl}}/auth/sign-up
@@ -18,7 +18,7 @@ POST {{baseUrl}}/auth/sign-in
 Content-Type: {{contentType}}
 
 {
-    "email": "dbz7@gmail.com",
+    "email": "dbz@gmail.com",
     "password": "123456"
 }
 
