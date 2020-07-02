@@ -1,7 +1,8 @@
 @baseUrl = http://localhost:3001
 @contentType = application/json
 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTkzNzA5MTg4LCJleHAiOjE1OTM3MTIxODh9.BEFtmN9kWMW1Z-a2tACW3LCY0YQIJV1mOaI_apGbSpM
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTkzNzExMzM4LCJleHAiOjE1OTM3MTQzMzh9.aRJV0lYOYt_Vrp1U-PBbUY1Mt0BgMcdKwLICKKsCdWg
+@refreshToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidmVyc2lvbiI6MCwiaWF0IjoxNTkzNzExMzM4LCJleHAiOjE1OTM3OTc3Mzh9.wsXMQnUdweVeorjxH5OBZOM_vlur2Ve-ySShvwODlls
 
 ### Create a Account
 POST {{baseUrl}}/auth/sign-up
@@ -22,6 +23,11 @@ Content-Type: {{contentType}}
     "password": "123456"
 }
 
+
+### Refresh token
+POST {{baseUrl}}/auth/refresh
+Content-Type: {{contentType}}
+Authorization: Bearer {{refreshToken}}
 
 ### List Links
 GET {{baseUrl}}/link
