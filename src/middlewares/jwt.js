@@ -6,7 +6,6 @@ const checkJwt = (req, res, next) => {
 
     if (!token) return res.jsonUnauthorized(null, 'Invalid token.');
 
-
     try {
         const decoded = verifyJwt(token);
         req.accountId = decoded.id;
